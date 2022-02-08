@@ -36,7 +36,10 @@ body {
   outline: 2px solid tomato;
 }
 /* ЗАГОЛОВОК */
-
+.main-nav {
+  display: flex;
+  text-align: center;
+}
 /* site-nav стилизация меню */
 .logo {
   color: var(--acsent-color);
@@ -45,6 +48,12 @@ body {
   font-size: 26px;
   line-height: 1.2;
   letter-spacing: 0.03em;
+  display: block;
+  margin-right: 93px;
+  display: flex;
+  padding-top: 24px;
+  padding-top: 25px;
+  width: 145px;
 }
 .logo-footer {
   color: var(--text-white-color);
@@ -55,13 +64,22 @@ body {
   color: var(--title-text-color);
   font-family: Raleway, sans-serif;
   letter-spacing: 0.03em;
+  display: block;
+}
+
+.top-nav {
+  display: flex;
 }
 .site-nav .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px
   color: var(--title-text-color);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+ 
 }
 .site-nav .link:hover,
 .site-nav .link:focus {
@@ -70,7 +88,21 @@ body {
 .link.current {
   color: var(--acsent-color);
 }
+.site-nav {
+  display: flex;
+}
+.site-nav .item:not(:last-child) {
+  margin-right: 50px;
+}
 /* address-nav */
+.address-nav {
+  display: flex;
+    margin-left: 331px;
+  }
+.address-nav .item:not(:last-child) {
+  margin-right: 50px;
+}
+
 .address-nav .link {
   color: var(--primary-text-color);
   font-weight: 500;
@@ -82,10 +114,17 @@ body {
 .address-nav .link:focus {
   color: var(--acsent-color);
 }
+.addres-item {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  width: 122px;
+}
 /* Блок герой */
 .hero {
   background-color: var(--black-bgc-color);
   text-align: center;
+  width: 1600px;
   height: 600px;
   padding-top: 200px;
   padding-left: 452px;
@@ -126,9 +165,15 @@ body {
   border: 1px solid transparent;
 }
 /* <!-- Особенности --> */
-.features .title {
+.hidden-title {
+  visibility: hidden;
+  margin: 0 0;
+}
+.features {
+  display: flex;
+}
+.features-title {
   color: var(--title-text-color);
-
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -136,6 +181,7 @@ body {
   text-transform: uppercase;
   margin-bottom: 10px;
   margin-top: 0px;
+  padding-top: 94px;
 }
 .section-title {
   color: var(--title-text-color);
@@ -152,7 +198,12 @@ body {
   letter-spacing: 0.03em;
   margin-top: 0;
   margin: 0 0;
+  padding-bottom: 94px;
 }
+.features .item + .item {
+  margin-left: 30px;
+}
+
 /* <!-- Чем мы занимаемся --> */
 
 /* <!-- Наша команда --> */
