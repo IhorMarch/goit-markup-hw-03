@@ -32,8 +32,11 @@ body {
 .container {
   margin-left: auto;
   margin-right: auto;
-  width: 1170px;
+  width: 1200px;
   outline: 2px solid tomato;
+  padding-left: 15px;
+  padding-right: 15px;
+  
 }
 /* ЗАГОЛОВОК */
 .main-nav {
@@ -118,7 +121,7 @@ body {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
-  width: 122px;
+  
 }
 /* Блок герой */
 .hero {
@@ -196,6 +199,7 @@ body {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+  width: 270px;
   margin-top: 0;
   margin: 0 0;
   padding-bottom: 94px;
@@ -205,10 +209,26 @@ body {
 }
 
 /* <!-- Чем мы занимаемся --> */
-
+.about{
+  padding-bottom: 94px;
+}
+.about-list{
+  display: flex;
+}
+.about .item:not(:last-child) {
+  margin-right: 30px;
+}
 /* <!-- Наша команда --> */
-.section.team {
+.section-team {
   background-color: var(--gray-bcg-color);
+}
+.team{
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.team-list{
+  display: flex
+  
 }
 .team-list .title {
   color: var(--title-text-color);
@@ -216,7 +236,8 @@ body {
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  /* identical to box height */
+ margin-top: 30px;
+ margin-bottom: 10px;
 
   text-align: center;
 }
@@ -226,6 +247,15 @@ body {
   /* identical to box height */
   text-align: center;
   letter-spacing: 0.03em;
+  margin: 0 0px;
+padding-bottom: 30px;
+
+}
+.team-list .item{
+  height: 368px;
+}
+.team-list .item:not(:last-child) {
+  margin-right: 30px;
 }
 
 /*Подвал */
