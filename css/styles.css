@@ -132,24 +132,18 @@ header {
 /* Блок герой */
 .hero {
   background-color: var(--black-bgc-color);
-  text-align: center;
-  /* width: 1600px;
-  height: 600px; */
   padding-top: 200px;
-  padding-left: 452px;
-  padding-right: 452px;
   padding-bottom: 200px;
+  text-align: center;
 }
 .hero-title {
   color: var(--text-white-color);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.37;
-  /* text-align: center; */
   letter-spacing: 0.06em;
   text-transform: uppercase;
   margin: auto;
-
   width: 696px;
 }
 .hero-button {
@@ -159,15 +153,12 @@ header {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.8;
-  /* display: flex; */
-  align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
   border-radius: 4px;
   padding: 10px 32px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   min-width: 200px;
-  height: 50px;
   border: 1px solid transparent;
   margin-top: 30px;
 }
@@ -201,7 +192,7 @@ header {
   text-transform: uppercase;
   margin-bottom: 10px;
   margin-top: 0px;
-  /* padding-top: 94px; */
+
 }
 .section-title {
   color: var(--title-text-color);
@@ -219,7 +210,7 @@ header {
   width: 270px;
   margin-top: 0;
   margin: 0 0;
-  /* padding-bottom: 94px; */
+  
 }
 .features .item + .item {
   margin-left: 30px;
@@ -298,10 +289,9 @@ header {
 .address-list .item:not(:last-child) {
   margin-bottom: 9px;
 }
-/* .address-list .item:last-child {
-  padding-bottom: 60px;
-} */
+
 /* ПОРТФОЛИО */
+
 /* Фильтр */
 .button {
   color: var(--title-text-color);
