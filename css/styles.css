@@ -20,7 +20,7 @@ body {
   font-family: Roboto, sans-serif;
   font-weight: 400;
 }
-.list {
+ul {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -33,7 +33,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   width: 1200px;
-  /* outline: 2px solid tomato; */
+  outline: 2px solid tomato;
   padding-left: 15px;
   padding-right: 15px;
 }
@@ -41,13 +41,24 @@ body {
   padding-top: 94px;
   padding-bottom: 94px;
 }
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
 /* ЗАГОЛОВОК */
 header {
-  border: 1px solid #ececec;
+  border-bottom: 1px solid #ececec;
 }
 .main-nav {
   display: flex;
-  text-align: center;
+  align-items: center;
 }
 /* site-nav стилизация меню */
 .logo {
@@ -68,18 +79,15 @@ header {
   font-family: Raleway, sans-serif;
   letter-spacing: 0.03em;
 }
-.logo-header {
+/* .logo-header {
   margin-right: 93px;
   padding-top: 24px;
   padding-top: 25px;
-}
-.logo-footer {
-  /* padding-top: 60px; */
-  margin-bottom: 20px;
-}
+} */
 
 .top-nav {
   display: flex;
+  margin-left: 93px;
 }
 .site-nav .link {
   display: block;
@@ -167,7 +175,7 @@ header {
   background: #188ce8;
 }
 /* <!-- Особенности --> */
-.hidden-title {
+.visually-hidden {
   position: absolute;
   white-space: nowrap;
   width: 1px;
@@ -192,7 +200,6 @@ header {
   text-transform: uppercase;
   margin-bottom: 10px;
   margin-top: 0px;
-
 }
 .section-title {
   color: var(--title-text-color);
@@ -202,6 +209,7 @@ header {
   text-align: center;
   letter-spacing: 0.03em;
   margin-top: 0;
+  margin-bottom: 50px;
 }
 .features-text {
   font-size: 14px;
@@ -210,7 +218,6 @@ header {
   width: 270px;
   margin-top: 0;
   margin: 0 0;
-  
 }
 .features .item + .item {
   margin-left: 30px;
@@ -227,7 +234,7 @@ header {
   margin-right: 30px;
 }
 /* <!-- Наша команда --> */
-.section-team {
+.team {
   background-color: var(--gray-bcg-color);
 }
 
@@ -240,7 +247,7 @@ header {
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  margin-top: 30px;
+
   margin-bottom: 10px;
 
   text-align: center;
@@ -251,13 +258,14 @@ header {
   text-align: center;
   letter-spacing: 0.03em;
   margin: 0 0px;
-  padding-bottom: 30px;
 }
-.team-img {
-  display: block;
-}
+
 .team-list .item:not(:last-child) {
   margin-right: 30px;
+}
+.team-description {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 /*Подвал */
@@ -268,6 +276,7 @@ header {
 }
 .address-list {
   font-style: normal;
+  margin-top: 20px;
 }
 .contacts {
   color: rgba(255, 255, 255, 0.6);
@@ -322,6 +331,7 @@ header {
   text-align: center;
   justify-content: center;
   /* text-align: center; */
+  margin-bottom: 50px;
 }
 .button-list .item:not(:last-child) {
   margin-right: 8px;
@@ -365,9 +375,7 @@ header {
   border-left: 1px solid #eeeeee;
   padding: 20px 24px;
 }
-.example-img {
-  display: block;
-}
+
 .example-border .title {
   padding: 0;
   margin: 0;
